@@ -1,0 +1,717 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=ks_c_5601-1987">
+<title>숲 GuestBook</title>
+<style type="text/css">
+  A {text-decoration: none; color:navy } 
+  A:hover {text-decoration: underline; color:orange} 
+  td {font-family:돋움;font-size:12 }
+  input,Textarea {
+    font-family:돋움; 
+    border: 1 solid silver
+  }
+</style>
+
+<script language="javascript">
+<!--
+function BoxWindow(name)
+{
+	msgWindow = window.open(name, "", "width=300, height=150, resizable=no, scrollbars=no");
+}
+
+function sendit() 
+{
+  //이름
+  if (document.myform.name.value == "") {
+    alert("이름을 입력해 주십시오.");
+    return;
+  }
+  //글 내용
+  if (document.myform.memo.value == "" ) {
+    alert("글을 작성 안하셨습니다. 글을 작성해 주십시요");
+    return;
+  } 
+  //암호
+  if (document.myform.passwd.value == "") {
+    alert("암호를 입력해 주십시오.");
+    return;
+  }
+  document.myform.submit(); 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="../back1.jpg" bgproperties="fixed">
+<p align="left"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guest Book.</font></p>
+<form method="POST" action="http://litwind.cafe24.com/bab_guest/insert.php" name="myform">
+  <table border="0" cellspacing="0" width="472" cellpadding="0">
+    <tr>
+      <td align="right" width="100" height="12" >name &nbsp;</td>
+      <td align="left" width="150" height="12">
+        <input type="text" name="name" size="20"></td>
+      <td align="right" width="100" height="12" >password &nbsp;</td>
+      <td align="left" width="122" height="12">
+        <input type="password" name="passwd" size="12"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100" height="12">e-mail &nbsp;</td>
+      <td align="left" width="372" height="12" colspan="3">
+        <input type="text" name="mail" size="50"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100">text &nbsp;</td>
+      <td align="left" width="372" colspan="3">
+        <textarea wrap="hard" rows="7" name="memo" cols="50"></textarea></td>
+    </tr>
+    <tr height="25">
+      <td align="right" colspan="3">&nbsp;</td>
+      <td align="center" style="padding-right:25">
+        <input type="button" value="enter" name="write" OnClick="sendit()"
+          style="background-color:white;">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">206</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		udongman	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=206">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=206">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=206')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		06-04-2003	    </font></div>
+	    <div> 음 이제서야 진정이 된듯 하야 글을 쓴다<br />
+왜 자꾸 내가 거론 되는거냐?..-_-;<br />
+난 글 쓴적도 없는데 계속 내 이름이 나오는군<br />
+정확히 10번 나오는군 이 페이지에만..--;<br />
+허헐 하여간 늦은감이 있지만 300일 축하하네<br />
+그나마 나의 죽어있는 홈페이지에 종종 글을 써 주는것이<br />
+너랑 강희니까 평소에 감사히 여기고 있다..--;<br />
+그럼 수고~		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> -_-;<br />
+동국이네~<br />
+허허허허~<br />
+하하하하~<br />
+후후후후~<br />
+헤헤헤헤~<br />
+훼훼훼훼~<br />
+dd해d~<br />
+<br />
+선근이랑&nbsp;착각해서&nbsp;미안~&nbsp;ㅡ0ㅡ;;<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">205</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		<a href="mailto:osh1979@hanmail.net">슬프당</a>	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=205">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=205">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=205')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		06-03-2003	    </font></div>
+	    <div> 안녕하세요... ^^;<br />
+우선 어색하지만 글을 올립니다.<br />
+구경(?)이라고 표현해야할지....넘 좋네여~~~<br />
+사진이란 무얼까여?? 정말 심각해여...<br />
+알구는 싶은데 사진에 대해서 전혀몰라<br />
+이렇게 글을 남깁니다.<br />
+		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> ^^<br />
+저도&nbsp;사진&nbsp;잘&nbsp;몰라요~<br />
+아는&nbsp;후배가&nbsp;운영하는&nbsp;싸이트에서<br />
+f어보다가&nbsp;글에&nbsp;어울리고&nbsp;마음에&nbsp;드는<br />
+사진을&nbsp;가져올&nbsp;뿐이라서..<br />
+그런데..<br />
+<br />
+그게&nbsp;좋은&nbsp;사진이라는&nbsp;생각입니다.<br />
+찍은&nbsp;사람과&nbsp;생각은&nbsp;달라도..<br />
+보는&nbsp;사람에게&nbsp;어울리고&nbsp;마음에&nbsp;남는<br />
+그런&nbsp;사진..&nbsp;^^;<br />
+글도&nbsp;그렇겠네요~<br />
+<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">204</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		이승우	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=204">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=204">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=204')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		06-03-2003	    </font></div>
+	    <div> 겜 다 받아간다..<br />
+그동안 재밌었다..<br />
+빠이빠이		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 즐군&nbsp;하셈~<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 용기야...<br />
+나한테&nbsp;새글&nbsp;쓰지말라고..&nbsp;그렇게&nbsp;부탁하더<br />
+니..<br />
+승우한텐&nbsp;말&nbsp;안했냐?<br />
+고새&nbsp;새글을&nbsp;써버렸네~&nbsp;ㅋㅋ<div align='right'><font color='slategray'>-sjsky-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 음???<br />
+스크롤의&nbsp;압빡&nbsp;때문에???<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 용기가&nbsp;스크롤의&nbsp;압박을&nbsp;상당히&nbsp;즐기고&nbsp;있<br />
+던데..&nbsp;ㅋㅋ<br />
+승우&nbsp;이제&nbsp;클났다.<br />
+용기&nbsp;삐질수도&nbsp;있다.<br />
+SM..ㅋㅋ<div align='right'><font color='slategray'>-sjsky-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 용기&nbsp;삐졌나?<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 삐졌네..<br />
+댓글도&nbsp;안올리잖아.&nbsp;ㅋㅋ<div align='right'><font color='slategray'>-sjsky-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 안삐졌다~&nbsp;잘&nbsp;봐~<br />
+-_-;<br />
+한화면에~&nbsp;글&nbsp;5개&nbsp;나오게&nbsp;해야쥐~<br />
+쿄쿄쿄~<br />
+승우&nbsp;4랑해&nbsp;..&nbsp;알지?&nbsp;&nbsp;ㅡㅠㅡ+<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 날&nbsp;사랑한다면&nbsp;내일까지&nbsp;계정에&nbsp;디아2를&nbsp;<br />
+올려줘요<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> '아즈망가&nbsp;대왕'&nbsp;올려놓으께~<br />
+이거나&nbsp;봐라~<br />
+하아~&nbsp;유카리&nbsp;센세이~&nbsp;전나&nbsp;멋쪄~<br />
+꺄아아아아아아악~!!<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 용기&nbsp;SM..&nbsp;으흠..&nbsp;-_-;;<br />
+Sadism&nbsp;and&nbsp;Masochism<br />
+원츄!~<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 오..&nbsp;진짜가?&nbsp;<br />
+손예진만큼&nbsp;이쁜가?<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 이나영만큼&nbsp;안이쁘다&nbsp;-ㅁ-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 쯧쯧..<br />
+사나이&nbsp;지조가&nbsp;있어야지~<br />
+허구헌날~&nbsp;'이나영',&nbsp;'이나영'&nbsp;그래서<br />
+내가&nbsp;어렵게&nbsp;이나영&nbsp;사진도&nbsp;구해서<br />
+보내줬더니..<br />
+<br />
+날&nbsp;봐라~<br />
+시종일관~~~~~~~~~~<br />
+'이소은'&nbsp;이자나..&nbsp;하핫~&nbsp;^^;<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 이소은?<br />
+이소는누렁소..가..??&nbsp;-_-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 휴..&nbsp;부라보콘&nbsp;광고를&nbsp;보고&nbsp;나면&nbsp;내&nbsp;말이&nbsp;이<br />
+해가&nbsp;될끼다...<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 우주최고&nbsp;미녀&nbsp;이나영이라며!!<br />
+그럼&nbsp;손예진은&nbsp;머고?&nbsp;-_-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 2나0&nbsp;은&nbsp;내가&nbsp;별로&nbsp;안좋아하는&nbsp;숫잔데&nbsp;왜자<br />
+꾸&nbsp;숫자가지고&nbsp;그라노?<div align='right'><font color='slategray'>-이승우-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 승우의&nbsp;헛소리땜시&nbsp;강풀&nbsp;만화가&nbsp;생각나네<br />
+&quot;앞으로&nbsp;'다'나'까'만&nbsp;사용한다~&quot;<br />
+&quot;그래도되나~&quot;&nbsp;-ㅁ-<br />
+에이..&nbsp;지조라곤&nbsp;오뉴월&nbsp;개똥에&nbsp;붙은&nbsp;똥파<br />
+리의&nbsp;발톱에&nbsp;낀&nbsp;똥만큼도&nbsp;엄는놈<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> ㅡ.ㅡ;;;<br />
+아주&nbsp;그냥~<br />
+2나0&nbsp;하구&nbsp;사알짝쿵&nbsp;데이트를&nbsp;하셔~<br />
+차~~~&nbsp;썅봉터미날&nbsp;같은&nbsp;놈!!<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 너희들&nbsp;모두!!!<br />
+1&nbsp;본놈&nbsp;-_-<br />
+하아..&nbsp;너무&nbsp;고난도&nbsp;개그야..&nbsp;머리아프군..<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 머리&nbsp;이따이..&nbsp;개그를&nbsp;하다뉘...<div align='right'><font color='slategray'>-강희-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 나도&nbsp;사랑한다니깐~<br />
+부끄럽게&nbsp;시리..&nbsp;^o^<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 시꾸랍다...&nbsp;선근이&nbsp;넌&nbsp;학교&nbsp;언제&nbsp;졸업해?<div align='right'><font color='slategray'>-강희-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 졸업을&nbsp;왜해?&nbsp;-_-;;<br />
+난&nbsp;학교가&nbsp;짜르기전에&nbsp;내가&nbsp;자퇴할껴&nbsp;-_-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 쯧쯧...<br />
+누가&nbsp;들으면&nbsp;너&nbsp;정말&nbsp;자퇴하는지&nbsp;알겠다?<div align='right'><font color='slategray'>-강희-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 할지도&nbsp;모르지..&nbsp;-_-<br />
+목표하는&nbsp;뜻이&nbsp;달라진다면&nbsp;-_-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 이&nbsp;글들..<br />
+다&nbsp;엽기적이지만..<br />
+동국이가&nbsp;여기&nbsp;글쓴적이&nbsp;없다는..<br />
+그&nbsp;사실이&nbsp;가장&nbsp;엽기적이군...<div align='right'><font color='slategray'>-sjsky-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 더&nbsp;엽기는&nbsp;내가&nbsp;동국이라&nbsp;착각한..<br />
+강희..&nbsp;용기지..&nbsp;-_-<br />
+젠장..&nbsp;죽어죽어죽어죽어죽엊!!&nbsp;ㅡ.ㅡ<br />
+<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 애들이&nbsp;강희를&nbsp;동국이라고&nbsp;부른다고&nbsp;생각<br />
+한..<br />
+니가&nbsp;더&nbsp;엽기야~&nbsp;^^;<br />
+진짜&nbsp;신기해~&nbsp;ㅋㅋ<div align='right'><font color='slategray'>-sjsky-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 난..&nbsp;머..&nbsp;강희&nbsp;이름으로&nbsp;동국이가&nbsp;쓰나보<br />
+다..&nbsp;했지..&nbsp;머..&nbsp;그..ㄹ...&nbsp;ㅡㅡ;<br />
+에잇..<br />
+용기&nbsp;바부땜시&nbsp;나까지&nbsp;-_-<br />
+용기랑&nbsp;그만놀아야지..&nbsp;물들어&nbsp;버리네&nbsp;-ㅁ-<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 허어~<br />
+그러니까~<br />
+내가&nbsp;늘&nbsp;말했지만..<br />
+선근이는&nbsp;다크템플러&nbsp;같은&nbsp;넘이라서<br />
+있는지&nbsp;없는지..<br />
+&quot;고시레~&quot;카면서&nbsp;소금&nbsp;뿌려보기&nbsp;전에는<br />
+알&nbsp;수&nbsp;없는거지~<br />
+그러니까~..<br />
+선근이가&nbsp;바로&nbsp;곁에&nbsp;있어도~<br />
+우린&nbsp;선근이를&nbsp;인지&nbsp;할&nbsp;수&nbsp;없다..<br />
+인&nbsp;것이지~!!<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 선근아..&nbsp;너&nbsp;정말&nbsp;바보냐?&nbsp;ㅡㅡ;<div align='right'><font color='slategray'>-강희-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 으씨..&nbsp;이것들이..<br />
+니들이&nbsp;먼저&nbsp;착각한거자나!!&nbsp;-_-<br />
+<div align='right'><font color='slategray'>-99국-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 옆에서&nbsp;삽질하는&nbsp;동국이를&nbsp;보면...<br />
+웃음이&nbsp;나온다...&nbsp;<br />
+선근이&nbsp;때문에...&nbsp;ㅡㅡ;<div align='right'><font color='slategray'>-강희-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+<tr>
+    <td>
+	<p align="center"> <a href="192.html">◀ </a><a href="1.html">1 </a> <a href="2.html">2 </a> <a href="3.html">3 </a> <a href="4.html">4 </a> <a href="5.html">5 </a> <a href="6.html">6 </a> <a href="7.html">7 </a> <a href="8.html">8 </a> <a href="9.html">9 </a> <a href="10.html">10 </a> ...261 <a href="194.html">▶ </a>    </td>
+</tr>
+</table>
+
+</body>
+</html>

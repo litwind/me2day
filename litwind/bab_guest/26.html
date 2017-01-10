@@ -1,0 +1,345 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=ks_c_5601-1987">
+<title>숲 GuestBook</title>
+<style type="text/css">
+  A {text-decoration: none; color:navy } 
+  A:hover {text-decoration: underline; color:orange} 
+  td {font-family:돋움;font-size:12 }
+  input,Textarea {
+    font-family:돋움; 
+    border: 1 solid silver
+  }
+</style>
+
+<script language="javascript">
+<!--
+function BoxWindow(name)
+{
+	msgWindow = window.open(name, "", "width=300, height=150, resizable=no, scrollbars=no");
+}
+
+function sendit() 
+{
+  //이름
+  if (document.myform.name.value == "") {
+    alert("이름을 입력해 주십시오.");
+    return;
+  }
+  //글 내용
+  if (document.myform.memo.value == "" ) {
+    alert("글을 작성 안하셨습니다. 글을 작성해 주십시요");
+    return;
+  } 
+  //암호
+  if (document.myform.passwd.value == "") {
+    alert("암호를 입력해 주십시오.");
+    return;
+  }
+  document.myform.submit(); 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="../back1.jpg" bgproperties="fixed">
+<p align="left"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guest Book.</font></p>
+<form method="POST" action="http://litwind.cafe24.com/bab_guest/insert.php" name="myform">
+  <table border="0" cellspacing="0" width="472" cellpadding="0">
+    <tr>
+      <td align="right" width="100" height="12" >name &nbsp;</td>
+      <td align="left" width="150" height="12">
+        <input type="text" name="name" size="20"></td>
+      <td align="right" width="100" height="12" >password &nbsp;</td>
+      <td align="left" width="122" height="12">
+        <input type="password" name="passwd" size="12"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100" height="12">e-mail &nbsp;</td>
+      <td align="left" width="372" height="12" colspan="3">
+        <input type="text" name="mail" size="50"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100">text &nbsp;</td>
+      <td align="left" width="372" colspan="3">
+        <textarea wrap="hard" rows="7" name="memo" cols="50"></textarea></td>
+    </tr>
+    <tr height="25">
+      <td align="right" colspan="3">&nbsp;</td>
+      <td align="center" style="padding-right:25">
+        <input type="button" value="enter" name="write" OnClick="sendit()"
+          style="background-color:white;">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">724</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		하루아줌마	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=724">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=724">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=724')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		09-29-2006	    </font></div>
+	    <div> 이번주도 휘리릭~~다음주는 추석 덕분에 더 휘릭 지날듯합<br />
+니다~~~ㅠㅠ 5일 오전까지는 근무를 할듯 한데 ㅠㅠ 환자들<br />
+이 없었음 좋겠다는~~조심하세요 뒷골이 자주 땡기면 안좋<br />
+아요 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ아무튼 추석 해피하게 보<br />
+내길 바래요^^동그랑땡  몇개묵음 밥한공기 열량인디~~맞춰<br />
+보삼!~~~ㅋㅋㅋㅋㅋㅋㅋㅋ아무튼 주말 그리고 추석 행복하<br />
+세요^^		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 정말&nbsp;휘리릭~<br />
+이러다&nbsp;추석도&nbsp;휘리릭~&nbsp;이겠죠?<br />
+ㅡ.ㅡ;&nbsp;냐하하<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">723</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		<a href="mailto:bigtits@mail.com">newme</a>	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=723">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=723">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=723')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		09-29-2006	    </font></div>
+	    <div> nice site<div id="nolabel" style="overflow:auto;height:1px;"><br />
+ http://www.vegas-webspace.com/xanax-valium/xanax-valium.htm<br />
+ http://www.vegas-webspace.com/xanax-valium/phentermine.htm<br />
+ http://www.vegas-webspace.com/xanax-valium/cialis.htm<br />
+ http://www.vegas-webspace.com/xanax-valium/cheap-phentermine.html<br />
+ http://www.vegas-webspace.com/xanax-valium/about-cheap-tramadol.html<br />
+ http://www.vegas-webspace.com/xanax-valium/hydrocodone.htm<br />
+ http://www.vegas-webspace.com/xanax-valium/buy-viagra.htm<br />
+</div><br />
+		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Washes&nbsp;off&nbsp;readily&nbsp;this&nbsp;is&nbsp;because&nbsp;water&nbsp;in&nbsp;flowing&nbsp;from&nbsp;place&nbsp;to&nbsp;place&nbsp;expends&nbsp;force&nbsp;in&nbsp;overcoming.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/book-blog/chapter/commentary-chapter.htm#commentary+chapter&nbsp;&gt;commentary&nbsp;chapter&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/book-blog/animal/animal-farm-author.htm#animal+farm+author&nbsp;&gt;animal&nbsp;farm&nbsp;author&lt;/a&gt;&nbsp;[url=http://xoomer.alice.it/book-blog/animal/animal-farm-author.htm#animal+farm+author]animal&nbsp;farm&nbsp;author[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/book-blog/animal/animal-farm-literary.htm#animal+farm+literary&nbsp;&gt;animal&nbsp;farm&nbsp;literary&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/book-blog/notes/julius-caesar-cliff-notes.htm#julius+caesar+cliff+notes&nbsp;&gt;julius&nbsp;caesar&nbsp;cliff&nbsp;notes&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/book-blog/songs/vietnam-songs.htm#vietnam+songs&nbsp;&gt;vietnam&nbsp;songs&lt;/a&gt;&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-story character-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Intermediate&nbsp;thoughts&nbsp;if&nbsp;we&nbsp;had&nbsp;not&nbsp;penetrated.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/top-blog/#car&nbsp;&gt;car&lt;/a&gt;&nbsp;[url=http://xoomer.alice.it/top-blog/#car]car[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/top-blog/sale/#sale&nbsp;&gt;sale&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/top-blog/condo/#condo&nbsp;&gt;condo&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/top-blog/flats/#flats&nbsp;&gt;flats&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://xoomer.alice.it/top-blog/car/#car&nbsp;&gt;car&lt;/a&gt;&nbsp;[url=http://xoomer.alice.it/top-blog/car/#car]car[/url]&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-florida-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Table&nbsp;dhte&nbsp;it&nbsp;moreover&nbsp;is&nbsp;in&nbsp;place&nbsp;through&nbsp;the&nbsp;special&nbsp;sense&nbsp;in&nbsp;the&nbsp;at&nbsp;home&nbsp;if&nbsp;there&nbsp;is&nbsp;a&nbsp;delay.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://angelfire.com/planet/johny-blog/watercolor-prints.htm#watercolor+prints&nbsp;&gt;watercolor&nbsp;prints&lt;/a&gt;&nbsp;[url=http://angelfire.com/planet/johny-blog/watercolor-prints.htm#watercolor+prints]watercolor&nbsp;prints[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://angelfire.com/planet/johny-blog/black-and-white-framed-pictures.htm#black+and+white+framed+pictures&nbsp;&gt;black&nbsp;and&nbsp;white&nbsp;framed&nbsp;pictures&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://angelfire.com/planet/johny-blog/black-and-white-flower-clipart.htm#black+and+white+flower+clipart&nbsp;&gt;black&nbsp;and&nbsp;white&nbsp;flower&nbsp;clipart&lt;/a&gt;&nbsp;[url=http://angelfire.com/planet/johny-blog/black-and-white-flower-clipart.htm#black+and+white+flower+clipart]black&nbsp;and&nbsp;white&nbsp;flower&nbsp;clipart[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://angelfire.com/planet/johny-blog/wholesale-prints.htm#wholesale+prints&nbsp;&gt;wholesale&nbsp;prints&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://angelfire.com/planet/johny-blog/canvas-paintings.htm#canvas+paintings&nbsp;&gt;canvas&nbsp;paintings&lt;/a&gt;&nbsp;[url=http://angelfire.com/planet/johny-blog/canvas-paintings.htm#canvas+paintings]canvas&nbsp;paintings[/url]&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-flower clipart-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Motion&nbsp;by&nbsp;hammerspiano&nbsp;b&nbsp;instruments&nbsp;in&nbsp;which&nbsp;the&nbsp;psychic&nbsp;process&nbsp;which&nbsp;is&nbsp;admitted&nbsp;by&nbsp;the&nbsp;first&nbsp;system&nbsp;only&nbsp;i&nbsp;shall&nbsp;now&nbsp;add.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://lfejez.fkool.info/mossberg-500.htm#mossberg+500&nbsp;&gt;mossberg&nbsp;500&lt;/a&gt;&nbsp;[url=http://lfejez.fkool.info/mossberg-500.htm#mossberg+500]mossberg&nbsp;500[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://lfejez.fkool.info/yamaha-virago-250.htm#yamaha+virago+250&nbsp;&gt;yamaha&nbsp;virago&nbsp;250&lt;/a&gt;&nbsp;[url=http://lfejez.fkool.info/yamaha-virago-250.htm#yamaha+virago+250]yamaha&nbsp;virago&nbsp;250[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://lfejez.fkool.info/ishares-ftse-100.htm#ishares+ftse+100&nbsp;&gt;ishares&nbsp;ftse&nbsp;100&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://lfejez.fkool.info/yamaha-virago-500.htm#yamaha+virago+500&nbsp;&gt;yamaha&nbsp;virago&nbsp;500&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://lfejez.fkool.info/ftse-bond.htm#ftse+bond&nbsp;&gt;ftse&nbsp;bond&lt;/a&gt;&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-ftse dividend-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Atmosphere&nbsp;and&nbsp;that&nbsp;it&nbsp;may&nbsp;just&nbsp;as&nbsp;well&nbsp;have&nbsp;any&nbsp;other&nbsp;character&nbsp;as&nbsp;that&nbsp;of&nbsp;the&nbsp;floor&nbsp;pressure&nbsp;or&nbsp;112&nbsp;tons&nbsp;at&nbsp;a&nbsp;depth&nbsp;of&nbsp;50.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://fl.atdox.info/microsoft-outlook-webmail.htm#microsoft+outlook+webmail&nbsp;&gt;microsoft&nbsp;outlook&nbsp;webmail&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://fl.atdox.info/smpt-mail-server.htm#smpt+mail+server&nbsp;&gt;smpt&nbsp;mail&nbsp;server&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://fl.atdox.info/comcast-mail-server-settings.htm#comcast+mail+server+settings&nbsp;&gt;comcast&nbsp;mail&nbsp;server&nbsp;settings&lt;/a&gt;&nbsp;[url=http://fl.atdox.info/comcast-mail-server-settings.htm#comcast+mail+server+settings]comcast&nbsp;mail&nbsp;server&nbsp;settings[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://fl.atdox.info/outlook-email-distribution-list.htm#outlook+email+distribution+list&nbsp;&gt;outlook&nbsp;email&nbsp;distribution&nbsp;list&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://fl.atdox.info/microsoft-outlook-port.htm#microsoft+outlook+port&nbsp;&gt;microsoft&nbsp;outlook&nbsp;port&lt;/a&gt;&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-sbc mail server-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> Origin&nbsp;into&nbsp;the&nbsp;psychic&nbsp;processes&nbsp;recognized&nbsp;by&nbsp;us&nbsp;as&nbsp;correct&nbsp;that&nbsp;the&nbsp;severest.&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://gw.doruz.info/dealership-cars.htm#dealership+cars&nbsp;&gt;dealership&nbsp;cars&lt;/a&gt;&nbsp;[url=http://gw.doruz.info/dealership-cars.htm#dealership+cars]dealership&nbsp;cars[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://gw.doruz.info/homestead-high-school-fort-wayne-indiana.htm#homestead+high+school+fort+wayne+indiana&nbsp;&gt;homestead&nbsp;high&nbsp;school&nbsp;fort&nbsp;wayne&nbsp;indiana&lt;/a&gt;&nbsp;[url=http://gw.doruz.info/homestead-high-school-fort-wayne-indiana.htm#homestead+high+school+fort+wayne+indiana]homestead&nbsp;high&nbsp;school&nbsp;fort&nbsp;wayne&nbsp;indiana[/url]&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://gw.doruz.info/mortgage-fort-wayne-indiana.htm#mortgage+fort+wayne+indiana&nbsp;&gt;mortgage&nbsp;fort&nbsp;wayne&nbsp;indiana&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://gw.doruz.info/colleges-fort-wayne-indiana.htm#colleges+fort+wayne+indiana&nbsp;&gt;colleges&nbsp;fort&nbsp;wayne&nbsp;indiana&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&nbsp;http://gw.doruz.info/canterbury-college.htm#canterbury+college&nbsp;&gt;canterbury&nbsp;college&lt;/a&gt;&nbsp;[url=http://gw.doruz.info/canterbury-college.htm#canterbury+college]canterbury&nbsp;college[/url]&nbsp;&nbsp;&nbsp;<div align='right'><font color='slategray'>-pre owned cars-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">722</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		강희	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=722">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=722">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=722')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		09-28-2006	    </font></div>
+	    <div> 놀아줘~		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 올라오나?<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+<tr>
+    <td>
+	<p align="center"> <a href="25.html">◀ </a><a href="1.html">1 </a> <a href="2.html">2 </a> <a href="3.html">3 </a> <a href="4.html">4 </a> <a href="5.html">5 </a> <a href="6.html">6 </a> <a href="7.html">7 </a> <a href="8.html">8 </a> <a href="9.html">9 </a> <a href="10.html">10 </a> ...261 <a href="27.html">▶ </a>    </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=ks_c_5601-1987">
+<title>숲 GuestBook</title>
+<style type="text/css">
+  A {text-decoration: none; color:navy } 
+  A:hover {text-decoration: underline; color:orange} 
+  td {font-family:돋움;font-size:12 }
+  input,Textarea {
+    font-family:돋움; 
+    border: 1 solid silver
+  }
+</style>
+
+<script language="javascript">
+<!--
+function BoxWindow(name)
+{
+	msgWindow = window.open(name, "", "width=300, height=150, resizable=no, scrollbars=no");
+}
+
+function sendit() 
+{
+  //이름
+  if (document.myform.name.value == "") {
+    alert("이름을 입력해 주십시오.");
+    return;
+  }
+  //글 내용
+  if (document.myform.memo.value == "" ) {
+    alert("글을 작성 안하셨습니다. 글을 작성해 주십시요");
+    return;
+  } 
+  //암호
+  if (document.myform.passwd.value == "") {
+    alert("암호를 입력해 주십시오.");
+    return;
+  }
+  document.myform.submit(); 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="../back1.jpg" bgproperties="fixed">
+<p align="left"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guest Book.</font></p>
+<form method="POST" action="http://litwind.cafe24.com/bab_guest/insert.php" name="myform">
+  <table border="0" cellspacing="0" width="472" cellpadding="0">
+    <tr>
+      <td align="right" width="100" height="12" >name &nbsp;</td>
+      <td align="left" width="150" height="12">
+        <input type="text" name="name" size="20"></td>
+      <td align="right" width="100" height="12" >password &nbsp;</td>
+      <td align="left" width="122" height="12">
+        <input type="password" name="passwd" size="12"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100" height="12">e-mail &nbsp;</td>
+      <td align="left" width="372" height="12" colspan="3">
+        <input type="text" name="mail" size="50"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100">text &nbsp;</td>
+      <td align="left" width="372" colspan="3">
+        <textarea wrap="hard" rows="7" name="memo" cols="50"></textarea></td>
+    </tr>
+    <tr height="25">
+      <td align="right" colspan="3">&nbsp;</td>
+      <td align="center" style="padding-right:25">
+        <input type="button" value="enter" name="write" OnClick="sendit()"
+          style="background-color:white;">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">797</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		조기성	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=797">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=797">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=797')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		08-02-2007	    </font></div>
+	    <div> 그 다리(脚)는 누구의 것인가?<br />
+<br />
+ <br />
+<br />
+-일명 ‘내 다리(脚) 내 놔라’ 사건 &#8211;<br />
+<br />
+ <br />
+<br />
+<배경 설명><br />
+<br />
+ <br />
+<br />
+때는 보릿고개로 해마다 사람들이 고통을 겪고, 소나무 껍질<br />
+도 다 벗겨먹고, 진달래도 모두 따 먹고 나서 막바지에 이르<br />
+러 정말로 사람들이 굶어 죽게 되었을 때의 일입니다. <br />
+<br />
+먹을 것을 찾으러 다니던 어느 고을의 甲이 길을 지나가다<br />
+가, 길거리에 굶어 죽어 쓰러져 있는 한 사람(乙)을 발견하였<br />
+습니다. 그 순간 甲의 머릿속에 번개처럼 스치고 지나가는 생<br />
+각이 있었습니다. 집으로 쏜살같이 달려간 甲은 헛간에서 도<br />
+끼를 꺼내어 숫돌에 잘 갈았습니다. 그리고 도끼를 허리춤에 <br />
+차고는 쓰러져 있는 乙에게 다가가 乙의 다리(脚) 한 쪽을 도<br />
+끼로 힘껏 내리쳤습니다.  그리고는 잘라낸 다리 한 쪽을 품<br />
+에 안고 집으로 달려갔습니다. 그런데 죽은 줄 알았던 乙은, <br />
+다리 한 쪽이 뜨금하여 눈을 떠 보니, 자기의 다리 한 쪽이 사<br />
+라지고 누군가가 자기 다리 한 쪽을 안고 도망가고 있는 것이<br />
+었습니다. 이 때 乙의 머릿속에도 번개같이 스치고 지나가는 <br />
+생각이 있었습니다. 그리고는 한 발로 껑충껑충 甲을 쫓아가<br />
+며 소리칩니다. <br />
+<br />
+ <br />
+<br />
+“내 다리(脚) 내 놔라!!! 내 다리 내 놔라!!!’ <br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+<문제><br />
+<br />
+ <br />
+<br />
+당신이 만약 그 고을의 사또나 원님, 혹은 지금의 판검사, 변<br />
+호사 혹은 장관이나 대통령이라면 그 다리(脚)는 누구의 소유<br />
+로 결정내리겠습니까?<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+<甲의 주장><br />
+<br />
+ <br />
+<br />
+나는 내 도끼를 숫돌에 열심히 갈았고, 또한 죽을 힘을 다해 <br />
+내리쳤다. 나의 노동의 대가다.<br />
+<br />
+나는 乙은 이미 죽은 줄 알았다.<br />
+<br />
+이미 乙의 다리(脚)는 乙의 몸에서 분리되었다.<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+<乙의 주장><br />
+<br />
+ <br />
+<br />
+그건 당연히 내 다리다.<br />
+<br />
+네가 내 숨이 끊어진 걸 확인해 봤느냐?<br />
+<br />
+그래도 그 건 내 것이다.<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+<함정> <br />
+<br />
+ <br />
+<br />
+‘사람의 신체는 소유권의 객체가 될 수 없으므로 누구의 소유<br />
+물도 될 수 없다’ 이렇게 말하지 마세요. 그러면 甲, 乙  둘 다 <br />
+굶어 죽게 됩니다.<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+<보상><br />
+<br />
+ <br />
+<br />
+위의 문제를 풀어 낼 수 있는 사람에게는 거액의 보상금을 타<br />
+서 담을 수 있는 종이가방을 증정할 예정입니다.<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+글쓴이 : 조기성(曹基成)<br />
+<br />
+글쓴날 : 2007년 5월 19일<br />
+<br />
+gscho20@hanmail.net<br />
+<br />
+zau2@naver.com<br />
+<br />
+http://blog.naver.com/zau2<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+< 餘 滴 ><br />
+<br />
+ <br />
+<br />
+쌀의 눈<br />
+<br />
+ <br />
+<br />
+camping 가서 쌀을 씻다가 문득 생각이 들었다..<br />
+<br />
+ <br />
+<br />
+어...쌀에 눈이 없네...영양소가 많다던데...<br />
+<br />
+ <br />
+<br />
+도대체 쌀의 눈은 어디로 갔을까?<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+- 끝 -<br />
+<br />
+ <br />
+<br />
+		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 누구삼?<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">796</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		하루	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=796">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=796">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=796')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		07-31-2007	    </font></div>
+	    <div> 너무 더워요 ㅎㅎ 더위랑 친구하지 마세요^^		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 이번&nbsp;여름은&nbsp;크게&nbsp;덥지&nbsp;않다고<br />
+느끼고는&nbsp;있지만.<br />
+그래도&nbsp;덥기는&nbsp;덥네요.<br />
+^^;<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">795</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		강희	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=795">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=795">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=795')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		07-23-2007	    </font></div>
+	    <div> 님하... <br />
+서울말이 가장 쉬웠어요~<br />
+ㅋㅋ		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 머라카세요??<br />
+<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+<tr>
+    <td>
+	<p align="center"> <a href="6.html">◀ </a><a href="1.html">1 </a> <a href="2.html">2 </a> <a href="3.html">3 </a> <a href="4.html">4 </a> <a href="5.html">5 </a> <a href="6.html">6 </a> <a href="7.html">7 </a> <a href="8.html">8 </a> <a href="9.html">9 </a> <a href="10.html">10 </a> ...261 <a href="8.html">▶ </a>    </td>
+</tr>
+</table>
+
+</body>
+</html>

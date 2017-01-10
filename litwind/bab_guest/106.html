@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=ks_c_5601-1987">
+<title>숲 GuestBook</title>
+<style type="text/css">
+  A {text-decoration: none; color:navy } 
+  A:hover {text-decoration: underline; color:orange} 
+  td {font-family:돋움;font-size:12 }
+  input,Textarea {
+    font-family:돋움; 
+    border: 1 solid silver
+  }
+</style>
+
+<script language="javascript">
+<!--
+function BoxWindow(name)
+{
+	msgWindow = window.open(name, "", "width=300, height=150, resizable=no, scrollbars=no");
+}
+
+function sendit() 
+{
+  //이름
+  if (document.myform.name.value == "") {
+    alert("이름을 입력해 주십시오.");
+    return;
+  }
+  //글 내용
+  if (document.myform.memo.value == "" ) {
+    alert("글을 작성 안하셨습니다. 글을 작성해 주십시요");
+    return;
+  } 
+  //암호
+  if (document.myform.passwd.value == "") {
+    alert("암호를 입력해 주십시오.");
+    return;
+  }
+  document.myform.submit(); 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="../back1.jpg" bgproperties="fixed">
+<p align="left"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guest Book.</font></p>
+<form method="POST" action="http://litwind.cafe24.com/bab_guest/insert.php" name="myform">
+  <table border="0" cellspacing="0" width="472" cellpadding="0">
+    <tr>
+      <td align="right" width="100" height="12" >name &nbsp;</td>
+      <td align="left" width="150" height="12">
+        <input type="text" name="name" size="20"></td>
+      <td align="right" width="100" height="12" >password &nbsp;</td>
+      <td align="left" width="122" height="12">
+        <input type="password" name="passwd" size="12"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100" height="12">e-mail &nbsp;</td>
+      <td align="left" width="372" height="12" colspan="3">
+        <input type="text" name="mail" size="50"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100">text &nbsp;</td>
+      <td align="left" width="372" colspan="3">
+        <textarea wrap="hard" rows="7" name="memo" cols="50"></textarea></td>
+    </tr>
+    <tr height="25">
+      <td align="right" colspan="3">&nbsp;</td>
+      <td align="center" style="padding-right:25">
+        <input type="button" value="enter" name="write" OnClick="sendit()"
+          style="background-color:white;">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">478</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		하루아점	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=478">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=478">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=478')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		04-09-2004	    </font></div>
+	    <div> 아주 큰선물이 된다 한표!~주말 잘보내기!~요~		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 주말에는&nbsp;이사한다고..<br />
+할때는&nbsp;몰랐는데..<br />
+오늘은&nbsp;좀&nbsp;피곤하네요..<br />
+ㅎㅎ<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">477</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		하루아점	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=477">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=477">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=477')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		04-07-2004	    </font></div>
+	    <div> 나는 별이나 출발이나 여행에 대해 날마다 조금씩 알게 되었<br />
+다. 어린 왕자가 무심결에 하는 말들을 통해 서서히 그렇게 <br />
+된것이었다. 사흘째 되는 날 바오밥나무의 비극을 알게 된 것<br />
+도 그렇게 해서였다. <br />
+<br />
+이번에도 역시 양의 덕택이었다. 심각한 의문이 생긴듯이 어<br />
+린 왕자가 느닷없이 물었다. "                     <br />
+<br />
+양이 작은 나무를 먹는다는게 정말이지?"<br />
+<br />
+"그럼, 정말이지."<br />
+<br />
+"아! 그럼 잘 됐네!"<br />
+<br />
+양이 작은 나무를 먹는다는게 왜 그리 중요한 사실인지 나는 <br />
+이해할 수 없었다. 그러나 어린 왕자는 말을 이었다.<br />
+<br />
+"그럼 바보밥나무도 먹겠지?"<br />
+<br />
+나는 어린 왕자에게 바오밥나무는 작은 나무가 아니라 성당<br />
+만큼이나 커다란 나무이고, 한 떼의 코끼리를 데려간다 해도 <br />
+바오밥나무 한 그루도 다 먹어치우지 못할 것이라고 일러주<br />
+었다.<br />
+<br />
+<br />
+한 떼의 코끼리라는 말에 어린 왕자는 웃으며,<br />
+<br />
+"코끼리들을 포개 놓아야겠네......"하고 말했다.<br />
+<br />
+그런데 그가 현명하게도 이런 말을했다.<br />
+<br />
+"바오밥나무도 커다랗게 자라기 전에는 작은 나무였지?"<br />
+<br />
+"물론이지! 그런데 왜 양이 바오밥나무를 먹어야 된다는 거<br />
+지?"<br />
+<br />
+어린 왕자는 "아이 참!"하며, 그것은 자명한 이치라는 듯이 대<br />
+꾸했다. 그래서 나는 혼자서 그 수수께끼를 푸느라고 한참 머<br />
+리를 짜내야만 했다.어린 왕자가 사는 별에는 다른 모든 별들<br />
+과 마찬가지로 좋은 풀과 나쁜 풀이 있었다.<br />
+<br />
+따라서 좋은 풀들의 좋은 씨들과 나쁜 풀들의 나쁜 씨들이 있<br />
+었다. 그러나 씨앗들은 눈에 보이지 않는다.  그것들은 땅 속 <br />
+깊이 숨어 잠들어 있다가 그중 하나가 갑작스레 잠에서 깨어<br />
+나고 싶어진다. 그러면 그것은 기지개를 켜고, 태양을 향해 <br />
+처음엔 머뭇거리면서 그 아름답고 연약한 새싹을 내민다. 그<br />
+것이 무우나 장미의 싹이면 그대로 내버려 두어도 된다.<br />
+<br />
+하지만 나쁜 식물의 싹이면 눈에 띄는 대로 뽑아 버려야 한<br />
+다. 그런데 어린 왕자의 별에는 무서운 씨앗들이 있었다...... <br />
+바오밥나무의 씨앗이었다. 그 별의 땅에는 바오밥나무 씨앗<br />
+투성이였다. 그런데 바오밥나무는 자칫 늦게 손을 쓰면 그땐 <br />
+정말 처치할 수 없게 된다. 별을 온통 엉망으로 만드는 것이<br />
+다. 뿌리로 별에 구멍을 뚫는 것이다. 게다가 별이 너무 작은<br />
+데 바오밥나무가 너무 많으면 별이 산산조각이 나버리고 마<br />
+는 것이다.<br />
+<br />
+<br />
+<br />
+"그건 기율의 문제야." 훗날 어린 왕자가 말했다. "아침에 몸<br />
+단장을 하고 정성들여 별의 몸단장을 해주어야 해. 규칙적으<br />
+로 신경을 써서 장미와 구별할 수 있게 되는 즉시 곧 그 바오<br />
+밥나무를 뽑아 버려야 하거든. 바오밥나무는 아주 어렸을 때<br />
+에는 장미와 매우 비슷하게 생겼어. 그것은 귀찮은 일이지만 <br />
+쉬운일이기도 하지."<br />
+<br />
+그리고는 우리 땅에 사는 어린이들 머릿속에 꼭 박히도록 예<br />
+쁜 그림을 하나 그려 보라고 했다. "그들이 언젠가 여행을 할 <br />
+때, 이것이 도움이 될 수도 있을거야. 할 일을 뒤로 미루는 것<br />
+이 때로는 아무렇지도 않을 수 있지. 하지만 바오밥나무의 경<br />
+우에는 그랬다가는 언제나 큰 재난이 따르는 법이야. 게으름<br />
+뱅이가 살고 있는 어느 별을 나는 알고 있었어. 그는 작은 나<br />
+무 세 그루를 무심히 내버려 두었었지......"<br />
+<br />
+<br />
+<br />
+<br />
+		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 제가&nbsp;좋아하는&nbsp;어린왕자.<br />
+어린왕자가&nbsp;아쉬운&nbsp;단&nbsp;하나의&nbsp;이유는<br />
+저&nbsp;말고도&nbsp;어린왕자를&nbsp;좋아하는&nbsp;사람이<br />
+너무너무&nbsp;많다는&nbsp;것이죠..&nbsp;^^;<br />
+<br />
+근데&nbsp;왜&nbsp;말이&nbsp;잘&nbsp;안통하는지..&nbsp;ㅡ.ㅡ;;<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 어린왕자는&nbsp;그냥&nbsp;그대로&nbsp;있는데...님이&nbsp;커<br />
+가는중일지&nbsp;모르죠..난&nbsp;어린왕자를&nbsp;좀&nbsp;여러<br />
+번&nbsp;읽었지만&nbsp;ㅎㅎ&nbsp;10대때&nbsp;20대때&nbsp;30대때&nbsp;&nbsp;<br />
+다른&nbsp;느낌으로&nbsp;다가오더라구요&nbsp;...기억에&nbsp;<br />
+남는것은&nbsp;없지만&nbsp;막상&nbsp;떠올리면...그래도&nbsp;<br />
+좀&nbsp;다른&nbsp;느낌으로&nbsp;항상&nbsp;다가와줘서&nbsp;고마웠<br />
+는데...<div align='right'><font color='slategray'>-하루아점-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">476</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		하루	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=476">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=476">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=476')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		04-06-2004	    </font></div>
+	    <div> ㅡ,.ㅡ 남자를 상대하는 여자      여자의 상대자는 남자 고로 <br />
+남자도 남자로 살기 무척 어려울듯 합니다 ^^::??????? 뭔말이<br />
+드래요 켁~~~~~~~~~~~~~~연휴는 잘보냈나요~~~^**^<br />
+<br />
+월요일 같은 화요일 비로 시작~앗 조금있음 화요일 같은 수<br />
+욜이겠군요~ 즐밤~		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 정말&nbsp;화요일&nbsp;같은&nbsp;수요일입니다.<br />
+다만..<br />
+이대로&nbsp;가다가&nbsp;금요일&nbsp;같은&nbsp;토요일..<br />
+토요일&nbsp;같은&nbsp;일요일을&nbsp;맞을까&nbsp;겁나네요.<br />
+ㅡ.ㅡ;;;&nbsp;ㅋㅋ<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+<tr>
+    <td>
+	<p align="center"> <a href="105.html">◀ </a><a href="1.html">1 </a> <a href="2.html">2 </a> <a href="3.html">3 </a> <a href="4.html">4 </a> <a href="5.html">5 </a> <a href="6.html">6 </a> <a href="7.html">7 </a> <a href="8.html">8 </a> <a href="9.html">9 </a> <a href="10.html">10 </a> ...261 <a href="107.html">▶ </a>    </td>
+</tr>
+</table>
+
+</body>
+</html>

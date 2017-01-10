@@ -1,0 +1,359 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/css; charset=ks_c_5601-1987">
+<title>숲 GuestBook</title>
+<style type="text/css">
+  A {text-decoration: none; color:navy } 
+  A:hover {text-decoration: underline; color:orange} 
+  td {font-family:돋움;font-size:12 }
+  input,Textarea {
+    font-family:돋움; 
+    border: 1 solid silver
+  }
+</style>
+
+<script language="javascript">
+<!--
+function BoxWindow(name)
+{
+	msgWindow = window.open(name, "", "width=300, height=150, resizable=no, scrollbars=no");
+}
+
+function sendit() 
+{
+  //이름
+  if (document.myform.name.value == "") {
+    alert("이름을 입력해 주십시오.");
+    return;
+  }
+  //글 내용
+  if (document.myform.memo.value == "" ) {
+    alert("글을 작성 안하셨습니다. 글을 작성해 주십시요");
+    return;
+  } 
+  //암호
+  if (document.myform.passwd.value == "") {
+    alert("암호를 입력해 주십시오.");
+    return;
+  }
+  document.myform.submit(); 
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="../back1.jpg" bgproperties="fixed">
+<p align="left"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guest Book.</font></p>
+<form method="POST" action="http://litwind.cafe24.com/bab_guest/insert.php" name="myform">
+  <table border="0" cellspacing="0" width="472" cellpadding="0">
+    <tr>
+      <td align="right" width="100" height="12" >name &nbsp;</td>
+      <td align="left" width="150" height="12">
+        <input type="text" name="name" size="20"></td>
+      <td align="right" width="100" height="12" >password &nbsp;</td>
+      <td align="left" width="122" height="12">
+        <input type="password" name="passwd" size="12"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100" height="12">e-mail &nbsp;</td>
+      <td align="left" width="372" height="12" colspan="3">
+        <input type="text" name="mail" size="50"></td>
+    </tr>
+    <tr>
+      <td align="right" width="100">text &nbsp;</td>
+      <td align="left" width="372" colspan="3">
+        <textarea wrap="hard" rows="7" name="memo" cols="50"></textarea></td>
+    </tr>
+    <tr height="25">
+      <td align="right" colspan="3">&nbsp;</td>
+      <td align="center" style="padding-right:25">
+        <input type="button" value="enter" name="write" OnClick="sendit()"
+          style="background-color:white;">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">131</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		알핀바이올렛	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=131">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=131">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=131')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		02-13-2003	    </font></div>
+	    <div> 오늘 졸업식 연습했어요..11.날씨도 추운데.ㅋ.<br />
+2004년..시험도 잘치고 기분홀가분하게~<br />
+졸업하고 싶은 마음이..11.ㅋ.근데 오늘처럼.날씨는 <br />
+안춥고요.ㅋ.따뜻하게.ㅋ.햇살받으면서.ㅋ.<br />
+졸업했음 좋겠어요.ㅋㅋ.이제 고3이다....ㅋ.		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 알핀바이올렛&nbsp;님&nbsp;덕에&nbsp;또<br />
+가만히&nbsp;짚어보니&nbsp;제&nbsp;동기들도<br />
+이제&nbsp;졸업식이&nbsp;몇일&nbsp;남지&nbsp;않았네요.<br />
+^^;;<br />
+꽃이라도&nbsp;사줘야&nbsp;할텐데..<br />
+날씨도&nbsp;좋아야&nbsp;할텐데~<br />
+...<br />
+다시&nbsp;웃으면서&nbsp;만나야&nbsp;할텐데..<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">130</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		sjsky	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=130">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=130">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=130')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		02-11-2003	    </font></div>
+	    <div> 직장인 친구...<br />
+잘지내고 있었나?<br />
+다시금 일상으로 돌아왔다.<br />
+<br />
+사실...<br />
+특별히 많이 보거나...<br />
+아주 아름다운 곳을 다녀오지는 않았다.<br />
+그냥 여행이라는게 꼭..<br />
+뭘 보거나... 뭐 특별한 걸 해야하는 것은 아니니...<br />
+<br />
+좀 더 신나게 놀 수도 있지않았을까?<br />
+더 많이 보고.. 더 느끼고 올 수도 있지않았을까?<br />
+이런 생각이 하나도 들지않는다면...<br />
+그건 진짜 거짓말이다.<br />
+그래도... 좋은 시간이었다.<br />
+부럽제? 큭~		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 방금&nbsp;돌아왔다.<br />
+첫날은&nbsp;새벽까지&nbsp;맥주+양주+소주<br />
+이렇게&nbsp;맛있게&nbsp;먹고,&nbsp;맛이&nbsp;갔구..<br />
+둘째날은&nbsp;스키타고&nbsp;와서&nbsp;밤새서<br />
+고스톱&nbsp;쳤다.<br />
+하하.&nbsp;덕에&nbsp;마지막날인&nbsp;오늘은<br />
+아직&nbsp;아무것도&nbsp;못먹었다.&nbsp;지금은&nbsp;오후4시<br />
+배고파~<br />
+<br />
+나도&nbsp;좋은&nbsp;시간&nbsp;보냈다.<br />
+ㅋㅋㅋ<br />
+너무&nbsp;부러워는&nbsp;마라!<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+    <tr>
+        <td width="100">
+        <p align="right">&nbsp;<font color="teal">no.</font></p>
+        </td>
+        <td width="372" colspan="2">
+            <p align="left">129</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="100">
+            <p align="right">&nbsp;name.</p>
+        </td>
+        <td width="222">
+            <p>
+		쥔장동네친구	    </p>
+        </td>
+	<td width="150">
+	    <p align="right"><font size="1">
+	    <a href="http://litwind.cafe24.com/bab_guest/write_refly.php?id=129">댓글</a>|
+	    <a href="http://litwind.cafe24.com/bab_guest/modify.php?id=129">수정</a>| 
+	    <a href="javascript:BoxWindow('./del.php?id=129')">삭제</a></font></p>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="372" colspan="2" style="border-width:1; border-color:silver; border-style:solid;">
+	    <div align='right'><font size="2pt" color="slategray">
+		02-11-2003	    </font></div>
+	    <div> 아.. 친구야...<br />
+<br />
+술 한잔 하고 싶구나...<br />
+<br />
+여기 맥주가 300원이니.. 단돈 만원으로 500ml 듐켈(흑맥)을<br />
+<br />
+30캔을 너에게 사줄수가 있어!!!<br />
+<br />
+그리고 남는 천원으로 볼빅(생수)를 사자꾸나!!!<br />
+<br />
+아.. 떠난지 일주일도 안됐는데... 갑갑해서 미치것다.<br />
+<br />
+귀국하고 싶어.. ㅜ.ㅜ 일하기 싫어... ㅜ.ㅜ<br />
+놀고 싶어... ㅜ.ㅜ		<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 난&nbsp;조금&nbsp;있다가<br />
+HCI&nbsp;간다~<br />
+회사&nbsp;사람들한테는&nbsp;교수님이<br />
+특별히&nbsp;날&nbsp;데려가&nbsp;주시기로&nbsp;했다고<br />
+구라치고..<br />
+(뭐&nbsp;장하가&nbsp;교수틱한&nbsp;면이&nbsp;없잖아&nbsp;있으니)<br />
+가서&nbsp;말년&nbsp;병장처럼&nbsp;구불러&nbsp;댕길&nbsp;생각이다<br />
+이미&nbsp;가서&nbsp;읽을&nbsp;책을&nbsp;3권이나&nbsp;골라<br />
+두었다.&nbsp;^^;<br />
+편하게&nbsp;지내라~<br />
+<br />
+이말밖에..<br />
+&nbsp;<div align='right'><font color='slategray'>-쥔장-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<br>
+		<table width="240" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="240" style="border-width:1; border-color:skyblue; border-style:solid;">
+			<div> 필리핀에선&nbsp;캔맥하나가&nbsp;400원쯤하는데...<br />
+병은&nbsp;...&nbsp;300원이&nbsp;안됐던걸로..기억하는뎅..<br />
+머...&nbsp;암튼&nbsp;역시&nbsp;맥주의&nbsp;나라여서&nbsp;그런가<br />
+맥주값이&nbsp;참&nbsp;싸네요.&nbsp;크크<br />
+이기회에...&nbsp;선배도&nbsp;주당의&nbsp;세계로<br />
+입문해보심이...^^;;<br />
+일!&nbsp;열심히&nbsp;하세요...^^<br />
+건강도&nbsp;지키면서~~&nbsp;^0^<br />
+<br />
+<div align='right'><font color='slategray'>-체리-</font></div>			</div>
+			</td>
+		</tr>
+		</table>
+		</div>
+				<div align="right">
+		<table width="230" bgcolor="aliceblue" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;">
+		<tr>
+			<td width="230">
+			<p>  
+			</p>
+			</td>
+		</tr>
+		</table>
+	    </div>
+	</td>
+    </tr>
+    <tr>
+    	<td width="100">
+	    <p>&nbsp;</p>
+	</td>    
+        <td width="400">
+            <p></p>
+        </td>
+    </tr>    
+</table>
+
+
+<table width="472" bordercolordark="white" bordercolorlight="silver" style="border-collapse:collapse;" cellpadding="2">
+<tr>
+    <td>
+	<p align="center"> <a href="217.html">◀ </a><a href="1.html">1 </a> <a href="2.html">2 </a> <a href="3.html">3 </a> <a href="4.html">4 </a> <a href="5.html">5 </a> <a href="6.html">6 </a> <a href="7.html">7 </a> <a href="8.html">8 </a> <a href="9.html">9 </a> <a href="10.html">10 </a> ...261 <a href="219.html">▶ </a>    </td>
+</tr>
+</table>
+
+</body>
+</html>
